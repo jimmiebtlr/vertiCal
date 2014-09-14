@@ -1,6 +1,6 @@
 Package.describe({
   summary: "Vertical Calendar plugin for meteor ",
-  version: "0.0.1-rc.4",
+  version: "0.0.1-rc.5",
   git: "https://github.com/jimmiebtlr/vertiCal.git"
 });
 

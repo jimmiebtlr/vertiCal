@@ -16,7 +16,7 @@ Template.vertiCal.rendered = function(){
         moment(Session.get("vertiCalStartDate")).add(1, 'days').format('MM/DD/YYYY') 
       );
     }
-
+    event.preventDefault();
   });
 }
 
