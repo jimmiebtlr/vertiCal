@@ -1,15 +1,17 @@
 <template name="vertiCal">
   <div id="vertiCal">
-    {{> vertiCalDefaultHeader}}
-    <div id="vertiCalScrollable" class="btn-group-vertical btn-block">
-      {{> vertiCalDefaultUpArrow}}
-      {{#each dates}}
-        {{> vertiCalDefaultDateContent}}
-      {{/each}}
-      {{> vertiCalDefaultDownArrow}}
-    </div>
+    <div class="hidden-sm hidden-xs">
+      {{> vertiCalDefaultHeader}}
+      <div id="vertiCalScrollable" class="btn-group-vertical btn-block">
+        {{> vertiCalDefaultUpArrow}}
+        {{#each dates}}
+          {{> vertiCalDefaultDateContent}}
+        {{/each}}
+        {{> vertiCalDefaultDownArrow}}
+      </div>
 
-    {{> vertiCalJumpToToday}}
+      {{> vertiCalJumpToToday}}
+    </div>
     {{> vertiCalJumpToDate}}
   </div>
 </template>
