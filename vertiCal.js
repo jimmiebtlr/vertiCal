@@ -5,7 +5,7 @@ Template.vertiCal.created = function(){
 }
 
 Template.vertiCal.dates = function(){
-  var num = this.number ? this.number : 7;
+  var num = this.numDays ? this.numDays : 7;
   var indexs = [];
   for( i = 0; i < num; i++ ){
     indexs.push(i);
