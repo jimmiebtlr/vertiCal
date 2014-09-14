@@ -80,8 +80,12 @@ Template.vertiCalJumpToDate.value = function(){
 
 Template.vertiCalJumpToDate.events({
   'click #jumpToDateSubmit': function(event ){
-    console.log($('#jumpToDateInput').val() );
-    Session.set('vertiCalStartDate', moment($('#jumpToDateInput').val()).format('MM/DD/YYYY') );
-    Session.set("vertiCalSelectedDate", moment($('#jumpToDateInput').val()).format('MM/DD/YYYY') );
+    if( moment($('#jumpToDateInput').val()).isValid() ){
+      Session.set('vertiCalStartDate', moment($('#jumpToDateInput').val()).format('MM/DD/YYYY') );
+      Session.set("vertiCalSelectedDate", moment($('#jumpToDateInput').val()).format('MM/DD/YYYY') );
+    }else{
+      Session.set('vertiCalStartDate', moment().format('MM/DD/YYYY') );
+      Session.set("vertiCalSelectedDate", moment().format('MM/DD/YYYY') );
+    }
   }
 });
