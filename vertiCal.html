@@ -1,0 +1,38 @@
+<template name="vertiCal">
+  <div id="vertiCal">
+    {{> vertiCalDefaultHeader}}
+    {{> vertiCalDefaultUpArrow}}
+    {{#each dates}}
+      {{> vertiCalDefaultDateContent}}
+    {{/each}}
+    {{> vertiCalDefaultDownArrow}}
+  </div>
+</template>
+
+<template name="vertiCalDefaultHeader">
+  <div class="vertiCalElement">
+    {{text}}
+  </div>
+</template>
+
+<template name="vertiCalDefaultUpArrow">
+  <div class="vertiCalControls">
+    <i class="fa fa-sort-asc fa-fw"></i>
+  </div>
+</template>
+
+<template name="vertiCalDefaultDateContent">
+  <div class="vertiCalElement {{active}}">
+    {{text}}
+  </div>
+</template>
+
+<template name="vertiCalDefaultDownArrow">
+  <div class="vertiCalControls">
+    <i class="fa fa-sort-desc fa-fw"></i>
+  </div>
+</template>
+
+<template name="vertiCalDefaultFooter">
+</template>
+
