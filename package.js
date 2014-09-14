@@ -1,7 +1,7 @@
 Package.describe({
   summary: "Vertical Calendar plugin for meteor ",
   version: "0.0.1-rc.1",
-  git: " \* Fill me in! *\ "
+  git: "https://github.com/jimmiebtlr/vertiCal.git"
 });
 
 Package.onUse(function(api) {
