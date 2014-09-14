@@ -6,32 +6,3 @@
 .vertiCalControl i{
   width: 100%;
 }
-
-.vertiCalControlBottom,
-.vertiCalControlTop,
-.vertiCalElement{
-  border: 1px solid #777;
-  background-color: #f9f9f9;
-}
-
-.vertiCalControlTop{
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-}
-
-.vertiCalControlBottom{
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-}
-
-.vertiCalControlBottom{
-}
-
-.vertiCalElement{
-  padding: 5px;
-}
-
-.vertiCalElement.active{
-  background-color: #ddd;
-}
-
