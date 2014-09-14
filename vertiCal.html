@@ -10,25 +10,25 @@
 </template>
 
 <template name="vertiCalDefaultHeader">
-  <div class="vertiCalElement">
-    {{text}}
+  <div class="vertiCalHeader text-center">
+    <h4>{{text}}</h4>
   </div>
 </template>
 
 <template name="vertiCalDefaultUpArrow">
-  <div class="vertiCalControls">
+  <div class="vertiCalControl vertiCalControlTop">
     <i class="fa fa-sort-asc fa-fw"></i>
   </div>
 </template>
 
 <template name="vertiCalDefaultDateContent">
-  <div class="vertiCalElement {{active}}">
+  <div class="vertiCalElement {{active}} text-center">
     {{text}}
   </div>
 </template>
 
 <template name="vertiCalDefaultDownArrow">
-  <div class="vertiCalControls">
+  <div class="vertiCalControl vertiCalControlBottom">
     <i class="fa fa-sort-desc fa-fw"></i>
   </div>
 </template>
