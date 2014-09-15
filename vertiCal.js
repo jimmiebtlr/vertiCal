@@ -2,6 +2,7 @@ VertiCal = {};
 
 Meteor.startup(function(){
   Session.set('vertiCalStartDate', moment().format('MM/DD/YYYY') );
+  Session.set('vertiCalSelectedDate', moment().format('MM/DD/YYYY') );
 });
 
 Template.vertiCal.rendered = function(){
