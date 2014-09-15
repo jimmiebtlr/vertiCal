@@ -1,3 +1,5 @@
+VertiCal = {};
+
 Template.vertiCal.created = function(){
   if( Session.get('vertiCalStartDate') === undefined ){
     Session.set('vertiCalStartDate', moment().format('MM/DD/YYYY') );
@@ -37,6 +39,10 @@ Template.vertiCalDefaultDateContent.active = function(){
   var current = moment(Session.get("vertiCalStartDate")).add(parseInt(this), 'days');
   var selected = Session.get("vertiCalSelectedDate");
   return current.isSame(selected,"day") ? "active" : "";
+}
+
+Template.vertiCalDefaultDateContent.customBtnContents = function(){
+  return VertiCal.dateBtnContentsTemplate;
 }
 
 Template.vertiCalDefaultDateContent.text = function(){

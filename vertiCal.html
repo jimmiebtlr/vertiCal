@@ -30,7 +30,11 @@
 
 <template name="vertiCalDefaultDateContent">
   <div class="btn btn-default {{active}} text-center">
-    {{text}}
+    {{#if customBtnContents}}
+      {{> customBtnContents}}
+    {{else}}
+      {{text}}
+    {{/if}}
   </div>
 </template>
 
