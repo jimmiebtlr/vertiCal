@@ -1,10 +1,8 @@
 VertiCal = {};
 
-Template.vertiCal.created = function(){
-  if( Session.get('vertiCalStartDate') === undefined ){
-    Session.set('vertiCalStartDate', moment().format('MM/DD/YYYY') );
-  }
-}
+Meteor.startup(function(){
+  Session.set('vertiCalStartDate', moment().format('MM/DD/YYYY') );
+});
 
 Template.vertiCal.rendered = function(){
   $('#vertiCalScrollable').bind('mousewheel',function(event){
